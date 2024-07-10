@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Registration Page</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #e0f7fa;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        width: 50%;
+        margin: 50px auto;
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 10px;
+        border: 2px solid #00796b;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+        text-align: center;
+        color: #00796b;
+    }
+
+    p {
+        text-align: center;
+        color: #00796b;
+    }
+
+    form {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #004d40;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    select {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    input[type="submit"] {
+        background-color: #00796b;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    input[type="submit"]:hover {
+        background-color: red;
+    }
+
+    a {
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+        text-decoration: none;
+        color: blue;
+        font-weight: lighter;
+         font-style: italic;
+        text-decoration: underline;
+    }
+
+    a:hover {
+        color: red;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <form action="InsertDetails" method="post">
+        <h1>Registration Form</h1>
+        <p>Please Fill This Form To Create An Account</p>
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="Enter Full Name Here..." name="name" required>
+
+        <label for="email">Email</label>
+        <input type="text" id="email" placeholder="Enter Email-ID" name="email" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter Password" name="password" required>
+
+        <label for="address">Address</label>
+        <input type="text" id="address" placeholder="Enter Address" name="address" required>
+
+        <label for="city">City</label>
+        <select id="city" name="city">
+            <option value="Pimpri">Pimpri</option>
+            <option value="Pune">Pune</option>
+            <option value="Chinchwad">Chinchwad</option>
+            <option value="Bhosari">Bhosari</option>
+        </select>
+
+        <label for="country">Country</label>
+        <select id="country" name="country">
+            <option value="India">India</option>
+            <option value="England">England</option>
+            <option value="Japan">Japan</option>
+            <option value="Australia">Australia</option>
+        </select>
+
+        <input type="submit" value="Register">
+    </form>
+    <a href="SelectDetails">View Student</a>
+</div>
+</body>
+</html>
